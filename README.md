@@ -1,6 +1,6 @@
 # qq_music
 
-> A Vue.js project
+> 为老婆写的音乐播放软件，仿QQ音乐IOS版，持续更新，以后接QQ音乐资源
 
 ## Build Setup
 
