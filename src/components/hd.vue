@@ -2,14 +2,14 @@
 	<header id="header" class="mui-bar mui-bar-nav">
 		<a class="mui-icon mui-icon-bars mui-pull-left"></a>
 		<h1 class="mui-title">
-			<div id="sliderSegmentedControl" class="mui-segmented-control mui-segmented-control-inverted">
-				<a class="mui-control-item mui-active" href="#item1">
+			<div class="mui-segmented-control mui-segmented-control-inverted">
+				<a class="mui-control-item mui-active" href="/home">
 					我的
 				</a>
-				<a class="mui-control-item" href="#item2">
+				<a class="mui-control-item" href="/store">
 					音乐馆
 				</a>
-				<a class="mui-control-item" href="#item3">
+				<a class="mui-control-item" href="/new">
 					发现
 				</a>
 			</div>

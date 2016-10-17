@@ -1,40 +1,34 @@
 <template>
-	<div class="home">
+	<div class="mui-content">
 		<hd></hd>
-		<div class="mui-content">
-			<div id="item1" class="mui-control-content mui-active">
-				<item1></item1>
-			</div>
-			<div id="item2" class="mui-control-content">
-				<item2></item2>
-
-			</div>
-			<div id="item3" class="mui-control-content">
-				<item3></item3>
-			</div>
-		</div>
+		<btn></btn>
+		<user></user>
+		<grid></grid>
+		<rec></rec>
+		<list></list>
+		<player></player>
 	</div>
 </template>
 <script>
-import item1 from '../items/item1'
-import item2 from '../items/item2'
-import item3 from '../items/item3'
 import hd from '../components/hd'
+import btn from '../components/btn'
+import user from '../components/user'
+import grid from '../components/grid'
+import rec from '../components/rec'
+import list from '../components/list'
+import player from '../components/player'
 	export default {
 		components: {
 			hd,
-			item1,
-			item2,
-			item3,
+			btn,
+			user,
+			grid,
+			rec,
+			list,
+			player
 		}
 	}
 </script>
 <style scoped>
-	.mui-table-view-cell.mui-active {
-		background-color: transparent;
-	}
 
-	.home {
-		padding-bottom: 50px;
-	}
 </style>

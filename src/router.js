@@ -12,16 +12,22 @@ const router = new VueRouter({
 //路由映射
 router.map({
 	'/': {
-		component (resolve) {
-			require(['./views/welcome'], resolve);
-			setTimeout(function () {
-				router.go('/home');
-			}, 1000)
-		}
+		component: (resolve) => require(['./views/welcome'], resolve)
+		
 	},
 	'/home': {
 		component (resolve) {
 			require(['./views/home'], resolve);
+		}
+	},
+	'/store': {
+		component (resolve) {
+			require(['./views/store'], resolve);
+		}
+	},
+	'/new': {
+		component (resolve) {
+			require(['./views/new'], resolve);
 		}
 	}
 });

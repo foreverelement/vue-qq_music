@@ -11,6 +11,9 @@ export default {
 </script>
 
 <style>
+	body {
+		padding-bottom: 50px;
+	}
 	.fade-transition {
 		transition: all .3s ease;
 	}
