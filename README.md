@@ -5,23 +5,25 @@
 ## Build Setup
 
 ``` bash
-# install dependencies
+# 安装NPM依赖包
 npm install
 
-# serve with hot reload at localhost:8080
+# 在本地测试环境跑起来，我自己改的80端口，如果你们的电脑80端口被系统占用，请改/config.index.js里面的dev端口
 npm run dev
 
-# build for production with minification
+# 打包为静态资源文件，需要服务器环境才能正常使用。默认部署'/'根目录下，如有需要请自行修改/config.index.js里面build/assetsPublicPath 目录为你的静态文件根目录
 npm run build
 
-# run unit tests
+# 运行测试环境
 npm run unit
 
-# run e2e tests
+# 运行 e2e js/jsx语法检查，可配置
 npm run e2e
 
-# run all tests
+# 运行单元测试
 npm test
+
+# 关于webpack自动化构建工具请参考
+http://vuejs-templates.github.io/webpack/
 ```
 
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
