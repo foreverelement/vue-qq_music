@@ -1,18 +1,27 @@
 <template>
-  <div>
-    <router-view keep-alive transition="fade" transition-mode="out-in"></router-view>
-  </div>
+	<div class="mui-content">
+		<hd></hd>
+		<router-view keep-alive transition="fade" transition-mode="out-in"></router-view>
+		<player></player>
+	</div>
 </template>
 
 <script>
+import hd from './components/hd'
+import player from './components/player'
+import store from './vuex/store'
 export default {
-
+	components: {
+		hd,
+		player
+	},
+	store
 }
 </script>
 
 <style>
 	body {
-		padding: 45px 0;
+		padding-bottom: 50px;
 	}
 	.fade-transition {
 		transition: all .3s ease;

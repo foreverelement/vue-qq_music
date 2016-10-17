@@ -1,6 +1,6 @@
 <template>
 	<div class="mui-content">
-		<hd></hd>
+		<!-- <hd></hd> -->
 		<div class="mui-segmented-control mui-segmented-control-inverted hd">
 			<a class="mui-control-item mui-active" href="#i1">
 				<span>精选</span>
@@ -34,7 +34,7 @@
 		<div id="i5" class="mui-control-content">
 			5
 		</div>
-		<player></player>
+		<!-- <player></player> -->
 	</div>
 </template>
 <script>

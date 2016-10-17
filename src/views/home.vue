@@ -1,12 +1,12 @@
 <template>
 	<div class="mui-content">
-		<hd></hd>
+		<!-- <hd></hd> -->
 		<btn></btn>
 		<user></user>
 		<grid></grid>
 		<rec></rec>
 		<list></list>
-		<player></player>
+		<!-- <player></player> -->
 	</div>
 </template>
 <script>
