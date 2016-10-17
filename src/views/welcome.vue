@@ -2,7 +2,16 @@
 	<img src="/static/img/1.png">
 </template>
 <script>
-	
+	export default {
+		ready () {
+			let router = this.$router;
+			let timer = setTimeout(function () {
+				clearTimeout(timer);
+				timer = null;
+				router.go('/home');
+			}, 1000)
+		}
+	}
 </script>
 <style scoped>
 	img {
