@@ -1,21 +1,31 @@
 <template>
 	<div class="mui-content">
-		<hd></hd>
+		<hd v-show="state.hd"></hd>
 		<router-view keep-alive transition="fade" transition-mode="out-in"></router-view>
-		<player></player>
+		<player v-show="state.player"></player>
 	</div>
 </template>
 
 <script>
 import hd from './components/hd'
 import player from './components/player'
-import store from './vuex/store'
 export default {
+	ready () {
+		this.state.hd = !this.state.hd;
+		this.state.player = !this.state.player;
+	},
+	data () {
+		return {
+			state: {
+				hd: false,
+				player: false,
+			}
+		}
+	},
 	components: {
 		hd,
 		player
-	},
-	store
+	}
 }
 </script>
 

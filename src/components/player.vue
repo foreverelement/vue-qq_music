@@ -12,7 +12,7 @@
 					<img src="/static/img/play.png" v-touch:tap="play" v-else>
 					<img src="/static/img/list.png">
 				</div>
-				<audio class="mui-hidden mp3" src="http://dl.stream.qqmusic.qq.com/C200004JQ70v4Fddyj.m4a?vkey=48ADE42CDA1C667AD29E3EEA997AC3AE44F3A3A6CA898C17AF95113D2B849E626142DBD47EF818BD7A780A041C5584AFF9BAB6C5F0BF944D&guid=2647101425&fromtag=30"></audio>
+				<audio class="mui-hidden mp3" src="http://211.149.173.193/tmp/ybxyq.mp3"></audio>
 			</div>
 		</div>
 	</footer>

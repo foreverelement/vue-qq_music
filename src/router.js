@@ -16,19 +16,14 @@ router.map({
 		
 	},
 	'/home': {
-		component (resolve) {
-			require(['./views/home'], resolve);
-		}
+		component: (resolve) => require(['./views/home'], resolve)
+		
 	},
 	'/store': {
-		component (resolve) {
-			require(['./views/store'], resolve);
-		}
+		component: (resolve) => require(['./views/store'], resolve)
 	},
 	'/new': {
-		component (resolve) {
-			require(['./views/new'], resolve);
-		}
+		component: (resolve) => require(['./views/new'], resolve)
 	}
 });
 

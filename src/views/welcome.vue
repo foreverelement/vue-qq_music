@@ -1,5 +1,5 @@
 <template>
-	<img src="/static/img/1.png">
+	<img src="/static/img/1.png" style="z-index:1000;">
 </template>
 <script>
 	export default {
@@ -9,7 +9,7 @@
 				clearTimeout(timer);
 				timer = null;
 				router.go('/home');
-			}, 1000)
+			}, 1000);
 		}
 	}
 </script>
@@ -21,5 +21,6 @@
 		bottom: 0;
 		left: 0;
 		right: 0;
+		z-index: 1000;
 	}
 </style>
