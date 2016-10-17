@@ -29,3 +29,6 @@ npm test
 http://vuejs-templates.github.io/webpack/
 ```
 
+## License
+
+[MIT](http://opensource.org/licenses/MIT)
