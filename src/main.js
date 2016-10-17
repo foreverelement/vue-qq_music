@@ -16,3 +16,5 @@ Vue.http.headers.common['Authorization'] = 'Basic YXBpOnBhc3N3b3Jk';
 Vue.http.options.emulateJSON = true;
 
 Router.start(App, '#app');
+
+window.router = Router;
