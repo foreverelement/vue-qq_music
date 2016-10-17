@@ -7,17 +7,6 @@
 				<a v-link="{path: '/store', activeClass: 'active'}" class="mui-col-xs-4 link">音乐馆</a>
 				<a v-link="{path: '/new', activeClass: 'active'}" class="mui-col-xs-4 link">发现</a>
 			</div>
-			<!-- <div class="mui-segmented-control mui-segmented-control-inverted">
-				<a class="mui-control-item mui-active" href="/home">
-					我的
-				</a>
-				<a class="mui-control-item" href="/store">
-					音乐馆
-				</a>
-				<a class="mui-control-item" href="/new">
-					发现
-				</a>
-			</div> -->
 		</h1>
 		<a class="mui-icon mui-icon-search mui-pull-right"></a>
 	</header>

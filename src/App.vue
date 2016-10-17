@@ -12,7 +12,7 @@ export default {
 
 <style>
 	body {
-		padding-bottom: 50px;
+		padding: 45px 0;
 	}
 	.fade-transition {
 		transition: all .3s ease;

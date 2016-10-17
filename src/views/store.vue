@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<div class="mui-content">
 		<hd></hd>
 		<div class="mui-segmented-control mui-segmented-control-inverted hd">
 			<a class="mui-control-item mui-active" href="#i1">
