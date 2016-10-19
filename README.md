@@ -26,8 +26,8 @@ npm run e2e
 npm test
 
 # 关于webpack自动化构建工具请参考
+https://github.com/vuejs-templates/webpack
 ```
-[webpack](https://github.com/vuejs-templates/webpack)
 
 ## License
 
