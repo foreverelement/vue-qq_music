@@ -19,20 +19,6 @@
 		</div>
 		<div id="i1" class="mui-control-content mui-active">
 			<choice></choice>
-			<div class="mui-row">
-				<div class="mui-col-xs-4">
-					<img src="/static/img/singer.png">
-					<span class="label">歌手</span>
-				</div>
-				<div class="mui-col-xs-4">
-					<img src="/static/img/classify.png">
-					<span class="label">分类</span>
-				</div>
-				<div class="mui-col-xs-4">
-					<img src="/static/img/album.png">
-					<span class="label">专辑</span>
-				</div>
-			</div>
 		</div>
 		<div id="i2" class="mui-control-content">
 			2
@@ -80,25 +66,5 @@
 	.hd .mui-control-item.mui-active span {
 		color: #31C27C;
 		border-bottom: 2px solid #31C27C;
-	}
-
-	.mui-row {
-		margin-top: -5px;
-		background-color: rgba(255, 255, 255, .3);
-		padding: 19px 0;
-	}
-
-	.mui-row .mui-col-xs-4 {
-		text-align: center;
-	}
-
-	.mui-row .mui-col-xs-4 img {
-		max-width: 35px;
-		max-height: 35px;
-		margin-bottom: -10px;
-	}
-
-	.mui-row .mui-col-xs-4 .label {
-		font-size: 16px;
 	}
 </style>

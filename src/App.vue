@@ -55,7 +55,7 @@ export default {
 		margin-bottom: -44px;
 	}
 
-	.mui-table-view:before, .mui-table-view:after {
+	.mui-table-view:before, .mui-table-view:after, .mui-table-view-cell:after {
 		height: 0;
 	}
 </style>
