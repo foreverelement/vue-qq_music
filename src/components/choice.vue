@@ -100,6 +100,7 @@ import xs4 from './xs4'
 			return {
 				newSong: {
 					title: '新歌速递',
+					pl: false,
 					datas: [
 					{
 						src: '/static/img/2.jpg',
@@ -117,6 +118,7 @@ import xs4 from './xs4'
 				},
 				hot: {
 					title: '热门歌单',
+					pl: true,
 					datas: [
 					{
 						src: '/static/img/2.jpg',
