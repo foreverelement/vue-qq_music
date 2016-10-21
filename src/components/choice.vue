@@ -50,11 +50,13 @@
 	<xs4 state="2"></xs4>
 	<xs6></xs6>
 	<xs4 state="3"></xs4>
+	<radio></radio>
 </template>
 <script>
 import xs4 from './xs4'
 import xs6 from './xs6'
 import today from './today'
+import radio from './radio'
 	export default {
 		ready () {
 			(function ($) {
@@ -64,7 +66,10 @@ import today from './today'
 			})(mui);
 		},
 		components: {
-			xs4, xs6, today
+			xs4,
+			xs6,
+			today,
+			radio
 		}
 	}
 </script>
