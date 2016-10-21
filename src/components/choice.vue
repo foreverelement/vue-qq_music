@@ -45,109 +45,17 @@
 			<span class="label">专辑</span>
 		</div>
 	</div>
-	<xs4 :songs="newSong"></xs4>
-	<div class="mui-table-view-cell p-title p-title-b">
-		<a class="mui-navigate-right">今日为你推荐（30首）</a>
-	</div>
-	<ul class="mui-table-view m-list">
-		<li class="mui-table-view-cell mui-media">
-			<img class="mui-media-object mui-pull-left" src="/static/img/4.jpg">
-			<div class="mui-media-body">
-				<span class="mui-icon mui-pull-right mui-icon-arrowdown mark"></span>
-				<span class="m-title">南方姑娘（弹唱版）</span>
-				<p class="mui-ellipsis">赵雷 - 赵小雷</p>
-			</div>
-		</li>
-		<li class="mui-table-view-cell mui-media">
-			<img class="mui-media-object mui-pull-left" src="/static/img/4.jpg">
-			<div class="mui-media-body">
-				<span class="mui-icon mui-pull-right mui-icon-arrowdown mark"></span>
-				<span class="m-title">太美丽</span>
-				<p class="mui-ellipsis">陶喆 - 太美丽</p>
-			</div>
-		</li>
-		<li class="mui-table-view-cell mui-media">
-			<img class="mui-media-object mui-pull-left" src="/static/img/4.jpg">
-			<div class="mui-media-body">
-				<span class="mui-icon mui-pull-right mui-icon-arrowdown mark"></span>
-				<span class="m-title">心中的日月</span>
-				<p class="mui-ellipsis">王力宏 - 太美丽</p>
-			</div>
-		</li>
-		<li class="mui-table-view-cell mui-media">
-			<img class="mui-media-object mui-pull-left" src="/static/img/4.jpg">
-			<div class="mui-media-body">
-				<span class="mui-icon mui-pull-right mui-icon-arrowdown mark"></span>
-				<span class="m-title">你比从前快乐</span>
-				<p class="mui-ellipsis">周杰伦 - 范特西PLUS</p>
-			</div>
-		</li>
-		<li class="mui-table-view-cell mui-media">
-			<img class="mui-media-object mui-pull-left" src="/static/img/4.jpg">
-			<div class="mui-media-body">
-				<span class="mui-icon mui-pull-right mui-icon-arrowdown mark"></span>
-				<span class="m-title">勇敢一点</span>
-				<p class="mui-ellipsis">弦子 - 逆风的蔷薇</p>
-			</div>
-		</li>
-	</ul>
-	<xs4 :songs="hot"></xs4>
+	<xs4 state="1"></xs4>
+	<today></today>
+	<xs4 state="2"></xs4>
+	<xs6></xs6>
+	<xs4 state="3"></xs4>
 </template>
 <script>
 import xs4 from './xs4'
+import xs6 from './xs6'
+import today from './today'
 	export default {
-		data () {
-			return {
-				newSong: {
-					title: '新歌速递',
-					pl: false,
-					datas: [
-					{
-						src: '/static/img/2.jpg',
-						dec: '重返童真，张碧晨新歌暖心治愈'
-					},
-					{
-						src: '/static/img/2.jpg',
-						dec: 'I.O.I公开迷你二辑，可爱满分'
-					},
-					{
-						src: '/static/img/2.jpg',
-						dec: '《圆梦巨人》影视原声热播'
-					}
-					]
-				},
-				hot: {
-					title: '热门歌单',
-					pl: true,
-					datas: [
-					{
-						src: '/static/img/2.jpg',
-						dec: '重返童真，张碧晨新歌暖心治愈'
-					},
-					{
-						src: '/static/img/2.jpg',
-						dec: 'I.O.I公开迷你二辑，可爱满分'
-					},
-					{
-						src: '/static/img/2.jpg',
-						dec: '《圆梦巨人》影视原声热播'
-					},
-					{
-						src: '/static/img/2.jpg',
-						dec: '《圆梦巨人》影视原声热播'
-					},
-					{
-						src: '/static/img/2.jpg',
-						dec: '《圆梦巨人》影视原声热播'
-					},
-					{
-						src: '/static/img/2.jpg',
-						dec: '《圆梦巨人》影视原声热播'
-					}
-					]
-				}
-			}
-		},
 		ready () {
 			(function ($) {
 				$('.mui-slider').slider({
@@ -156,7 +64,7 @@ import xs4 from './xs4'
 			})(mui);
 		},
 		components: {
-			xs4
+			xs4, xs6, today
 		}
 	}
 </script>
@@ -179,52 +87,6 @@ import xs4 from './xs4'
 
 	.ify .mui-col-xs-4 .label {
 		font-size: 16px;
-	}
-
-	.p-title a {
-		text-align: center;
-		font-size: 16px;
-		color: #333;
-	}
-
-	.p-title-a a {
-		background-color: rgba(255, 255, 255,.5);
-	}
-
-	.p-title-b a {
-		background-color: rgba(255, 255, 255,.8);
-	}
-
-	.m-list {
-		margin-top: -1px;
-		background-color: rgba(255, 255, 255,.8);
-	}
-
-	.m-list .mui-media {
-		padding: 4px 11px;
-	}
-
-	.m-list img.mui-media-object {
-		max-width: 52px;
-		height: 52px;
-	}
-
-	.m-list .mui-media-body {
-		margin-top: 5px;
-	}
-
-	.m-list .mui-media-body .m-title {
-		font-size: 14px;
-	}
-
-	.m-list .mui-media-body p {
-		font-size: 12px;
-	}
-
-	.m-list .mark {
-		line-height: 42px;
-		color: #666;
-		font-size: 20px;
 	}
 
 </style>

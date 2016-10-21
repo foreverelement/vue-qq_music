@@ -1,12 +1,12 @@
 <template>
 	<div class="mui-table-view-cell p-title p-title-a">
-		<a class="mui-navigate-right">{{songs.title}}</a>
+		<a class="mui-navigate-right">{{datas.title}}</a>
 	</div>
 	<ul class="new mui-row">
-		<li class="mui-col-xs-4" v-for="song in songs.datas">
+		<li class="mui-col-xs-4" v-for="song in datas.datas">
 			<img :src="song.src" class="img">
-			<div class="pl" v-if="songs.pl">
-				<span>300.2万</span>
+			<div class="pl" v-if="datas.pl">
+				<span>{{song.num}}万</span>
 				<img src="/static/img/play-1.png">
 			</div>
 			
@@ -16,7 +16,91 @@
 </template>
 <script>
 	export default {
-		props: ['songs']
+		props: ['state'],
+		data () {
+			return {
+				newSong: {
+					title: '新歌速递',
+					pl: false,
+					datas: [
+					{
+						src: '/static/img/2.jpg',
+						dec: '重返童真，张碧晨新歌暖心治愈'
+					},
+					{
+						src: '/static/img/2.jpg',
+						dec: 'I.O.I公开迷你二辑，可爱满分'
+					},
+					{
+						src: '/static/img/2.jpg',
+						dec: '《圆梦巨人》影视原声热播'
+					}
+					]
+				},
+				hot: {
+					title: '热门歌单',
+					pl: true,
+					datas: [
+					{
+						src: '/static/img/2.jpg',
+						num: 302.1,
+						dec: '重返童真，张碧晨新歌暖心治愈'
+					},
+					{
+						src: '/static/img/2.jpg',
+						num: 171.6,
+						dec: 'I.O.I公开迷你二辑，可爱满分'
+					},
+					{
+						src: '/static/img/2.jpg',
+						num: 117.8,
+						dec: '《圆梦巨人》影视原声热播'
+					},
+					{
+						src: '/static/img/2.jpg',
+						num: 262.4,
+						dec: '《圆梦巨人》影视原声热播'
+					},
+					{
+						src: '/static/img/2.jpg',
+						num: 583.3,
+						dec: '《圆梦巨人》影视原声热播'
+					},
+					{
+						src: '/static/img/2.jpg',
+						num: 707.2,
+						dec: '《圆梦巨人》影视原声热播'
+					}
+					]
+				},
+				original: {
+					title: '独立原创',
+					pl: true,
+					datas: [
+					{
+						src: '/static/img/2.jpg',
+						num: 2.1,
+						dec: '重返童真，张碧晨新歌暖心治愈'
+					},
+					{
+						src: '/static/img/2.jpg',
+						num: 6.6,
+						dec: 'I.O.I公开迷你二辑，可爱满分'
+					},
+					{
+						src: '/static/img/2.jpg',
+						num: 4.8,
+						dec: '《圆梦巨人》影视原声热播'
+					}
+					]
+				}
+			}
+		},
+		computed: {
+			datas () {
+				return this.state == 1? this.newSong : this.state == 2? this.hot : this.original;
+			}
+		}
 	}
 </script>
 <style scoped>
@@ -29,6 +113,7 @@
 	.p-title-a a {
 		background-color: rgba(255, 255, 255,.5);
 	}
+	
 	.new {
 		margin-top: -1px;
 		width: 100%;
