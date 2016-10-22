@@ -1,7 +1,7 @@
 <template>
 	<div class="mui-content">
 		<hd v-if="getHd" transition="down" transition-mode="out-in"></hd>
-		<router-view keep-alive transition="fade"></router-view>
+		<router-view transition="fade"></router-view>
 		<player v-if="getPlayer" transition="top"></player>
 	</div>
 </template>

@@ -1,6 +1,5 @@
 <template>
-	<div class="mui-table-view-cell title">QQ音乐排行榜</div>
-	<list-qq></list-qq>
+	<list-qq transition="fade"></list-qq>
 </template>
 <script>
 import listQq from '../components/list-qq'
@@ -11,7 +10,5 @@ import listQq from '../components/list-qq'
 	}
 </script>
 <style scoped>
-	.title {
-		text-align: center;
-	}
+
 </style>
