@@ -20,7 +20,15 @@ router.map({
 		
 	},
 	'/store': {
-		component: (resolve) => require(['./views/store'], resolve)
+		component: (resolve) => require(['./views/store'], resolve),
+		subRoutes: {
+			'/rec': {
+				component: (resolve) => require(['./views/choice'], resolve)
+			},
+			'/rank': {
+				component: (resolve) => require(['./views/rank'], resolve)
+			}
+		}
 	},
 	'/new': {
 		component: (resolve) => require(['./views/new'], resolve)

@@ -51,12 +51,14 @@
 	<xs6></xs6>
 	<xs4 state="3"></xs4>
 	<radio></radio>
+	<mv></mv>
 </template>
 <script>
-import xs4 from './xs4'
-import xs6 from './xs6'
-import today from './today'
-import radio from './radio'
+import xs4 from '../components/xs4'
+import xs6 from '../components/xs6'
+import today from '../components/today'
+import radio from '../components/radio'
+import mv from '../components/mv'
 	export default {
 		ready () {
 			(function ($) {
@@ -69,7 +71,8 @@ import radio from './radio'
 			xs4,
 			xs6,
 			today,
-			radio
+			radio,
+			mv
 		}
 	}
 </script>

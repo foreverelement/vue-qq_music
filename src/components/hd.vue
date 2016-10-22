@@ -4,7 +4,7 @@
 		<h1 class="mui-title">
 			<div class="box">
 				<a v-link="{path: '/home', activeClass: 'active'}" class="mui-col-xs-4 link">我的</a>
-				<a v-link="{path: '/store', activeClass: 'active'}" class="mui-col-xs-4 link">音乐馆</a>
+				<a v-link="{path: '/store/rec', activeClass: 'active'}" class="mui-col-xs-4 link">音乐馆</a>
 				<a v-link="{path: '/new', activeClass: 'active'}" class="mui-col-xs-4 link">发现</a>
 			</div>
 		</h1>
