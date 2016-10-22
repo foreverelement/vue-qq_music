@@ -27,6 +27,15 @@ router.map({
 			},
 			'/rank': {
 				component: (resolve) => require(['./views/rank'], resolve)
+			},
+			'/songs': {
+				component: (resolve) => require(['./views/songs'], resolve)
+			},
+			'/radio': {
+				component: (resolve) => require(['./views/radio'], resolve)
+			},
+			'/mv': {
+				component: (resolve) => require(['./views/mv'], resolve)
 			}
 		}
 	},
