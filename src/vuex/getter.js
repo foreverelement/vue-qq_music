@@ -1,4 +1,5 @@
-export const getHd = state => state.lazy.hd;
+export const getHd = ({lazy}) => lazy.hd;
+export const getPlayer = ({lazy}) => lazy.player;
 
-export const getPlayer = state => state.lazy.player;
+export const getStorePath = ({storePath}) => storePath.path;
 

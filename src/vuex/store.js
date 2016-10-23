@@ -1,7 +1,8 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 
-import lazy from './lib/lazy'
+import lazy from './mod/lazy'
+import storePath from './mod/store_path'
 
 
 Vue.use(Vuex);
@@ -11,7 +12,8 @@ Vue.use(Vuex);
 // 至此，这个 store 就可以连接到我们的应用中
 export default new Vuex.Store({
 	modules: {
-		lazy
+		lazy,
+		storePath
 	},
 	strict: true
 })

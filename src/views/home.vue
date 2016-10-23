@@ -16,8 +16,8 @@ import list from '../components/list'
 import store from '../vuex/store'
 	export default {
 		ready(){
-			store.dispatch('hdActive', true);
-			store.dispatch('playerActive', true);
+			store.dispatch('SET_HD', true);
+			store.dispatch('SET_PLAYER', true);
 		},
 		components: {
 			btn,
